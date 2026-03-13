@@ -11,10 +11,11 @@
       "module": "uvicorn",
       "args": [
         "src.app:app",
-        "--reload",
-        "--reload-include",
-        "src/static/*"
+        "--reload"
       ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
       "jinja": true
     }
   ]
